@@ -14,7 +14,7 @@ pipeline{
       }
       stage("Build docker image"){
          steps{
-            powershell "docker build -t vindealone/demoServicejmimage:0.0.1 ."
+            powershell "docker build -t vindealone/demoservicejmimage:0.0.1 ."
          }
       }
       stage("Upload docker image to docker hub"){
